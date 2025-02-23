@@ -1,5 +1,6 @@
 import { Link } from "react-router";
 import { FaInstagram, FaMeta, FaXTwitter } from "react-icons/fa6";
+import { PhoneCall } from 'lucide-react';
 
 const Footer = () => {
     return (
@@ -9,10 +10,10 @@ const Footer = () => {
 
                     <div>
                         <div className="flex items-center mb-4">
-                            <img src="./images/eggsLogo.jpg" alt="" className="h-8 w-auto mr-2 rounded-lg" />
+                            <img src="./images/eggsnmore.jpg" alt="" className="h-15 w-15 mr-2 rounded-lg" />
                             <span className="font-bold text-lg">Eggs and More</span>
                         </div>
-                        <p>Get your fresh farm eggs and more from us.</p>
+                        <p>Find us at Anaji, Opposite C.K Mann Park.</p>
                     </div>
 
                     {/* Quick Links */}
@@ -29,7 +30,7 @@ const Footer = () => {
                             </li>
                             <li>
                                 <Link
-                                    to='/about'
+                                    to='/company'
                                     className="text-gray-300 hover:text-yellow-500 transition-colors duration-200"
                                 >
                                     Company
@@ -37,7 +38,7 @@ const Footer = () => {
                             </li>
                             <li>
                                 <Link
-                                    to='/about'
+                                    to='/services'
                                     className="text-gray-300 hover:text-yellow-500 transition-colors duration-200"
                                 >
                                     Services
@@ -45,7 +46,7 @@ const Footer = () => {
                             </li>
                             <li>
                                 <Link
-                                    to='/about'
+                                    to='/contact'
                                     className="text-gray-300 hover:text-yellow-500 transition-colors duration-200"
                                 >
                                     Contact
@@ -64,20 +65,23 @@ const Footer = () => {
                             <Link>
                                 <FaXTwitter className="w-6 h-6" />
                             </Link>
-                            <Link>
+                            <Link target="_blank" to='https://www.instagram.com/eggs_n_more/'>
                                 <FaInstagram className="w-6 h-6" />
                             </Link>
                         </div>
                         <Link
-                            to='mailto:info@eggasnmore.com'
-                            className="block text-gray-300 hover:text-yellow-500 transition-colors duration-200 mb-2"
+                            to='mailto:eggsnmore.gh@gmail.com'
+                            className="block text-gray-300 hover:text-yellow-500 transition-colors duration-200 mb-5"
                         >
-                            info@eggsnmore.com
+                            eggsnmore.gh@gmail.com
                         </Link>
+                        <p className="inline-flex">
+                            <PhoneCall /> <span className="ml-3 mr-3">+233 24 843 4328 / +233 50 530 3636</span>
+                        </p>
                     </div>
                 </div>
                 <div className="mt-8 pt-8 border-t border-gray-600 text-center text-gray-400">
-                    <p>All rights reserved. 2025</p>
+                <p>&copy; {new Date().getFullYear()} Eggs'n'More. All rights reserved.</p>
                 </div>
             </div>
         </footer>
