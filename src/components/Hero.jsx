@@ -9,6 +9,7 @@ const Hero = () => {
     return (
         <motion.div
             className="min-h-[80vh] bg-gradient-to-b from-yellow-50 to-white pt-16"
+            id="home"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
