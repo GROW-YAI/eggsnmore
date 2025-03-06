@@ -24,10 +24,10 @@ const Hero = () => {
                         animate={{ x: 0, opacity: 1 }}
                         transition={{ duration: 0.7 }}
                     >
-                        <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
+                        <h1 className="font-jakarta text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
                             Get Your Wholesale Eggs and More From Us
                         </h1>
-                        <p className="text-lg sm:text-xl text-gray-600 mb-8">
+                        <p className="font-jakarta text-lg sm:text-xl text-gray-600 mb-8">
                             EGGS N MORE just got an upgrade! Our Egg Powder and Eggshell
                             Powder are now available in fresh, sleek packaging - same premium quality,
                             now with a better experience!
@@ -37,7 +37,7 @@ const Hero = () => {
                                 whileHover={{ scale: 1.05 }}
                                 whileTap={{ scale: 0.95 }}
                             >
-                                <a href="https://paystack.store/eggs-n-more" rel="noopener noreferrer" className="inline-flex items-center bg-yellow-500 text-white px-8 py-3 rounded-full font-medium hover:bg-yellow-600 transition-colors duration-200">
+                                <a href="https://paystack.store/eggs-n-more" rel="noopener noreferrer" className="font-jakarta inline-flex items-center bg-yellow-500 text-white px-8 py-3 rounded-full font-medium hover:bg-yellow-600 transition-colors duration-200">
                                     Shop Now
                                     <FaArrowRight className="ml-2" />
                                 </a>

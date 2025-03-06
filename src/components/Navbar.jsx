@@ -11,14 +11,15 @@ const Navbar = () => {
         <nav className="fixed w-full bg-white shadow-md z-50">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center h-16">
-                    <div className="flex items-center">
-                        <a href="#">
+                    <div className="font-jakarta flex items-center">
+                        <a href="#" className="inline-flex space-x-2 items-center">
                             <img src="./images/eggsnmore.jpg" alt="logo" className="h-13 w-13 rounded-xl" />
+                            <p className="text-lg">Eggs n More</p>
                         </a>
                     </div>
 
                     {/* Desktop Nav */}
-                    <div className="hidden md:flex space-x-8">
+                    <div className="hidden md:flex space-x-8 font-jakarta">
                         {menuItems.map((item, index) => (
                             <a
                                 key={index}
@@ -46,7 +47,7 @@ const Navbar = () => {
                         animate={{ opacity: 1, height: 'auto' }}
                         exit={{ opacity: 0, height: 0 }}
                         className="md:hidden bg-white">
-                        <div className="px-2 pt-2 pb-3 space-y-1">
+                        <div className="px-2 pt-2 pb-3 space-y-1 font-jakarta">
                             {menuItems.map((item, index) => (
                                 <a
                                     key={index}

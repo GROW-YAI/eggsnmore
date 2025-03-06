@@ -8,7 +8,7 @@ const Footer = () => {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
 
-                    <div>
+                    <div className="font-jakarta">
                         <div className="flex items-center mb-4">
                             <img src="./images/eggsnmore.jpg" alt="" className="h-15 w-15 mr-2 rounded-lg" />
                             <span className="font-bold text-lg">Eggs and More</span>
@@ -17,7 +17,7 @@ const Footer = () => {
                     </div>
 
                     {/* Quick Links */}
-                    <div>
+                    <div className="font-jakarta">
                         <h3 className="font-bold text-lg mb-4">Quick Links</h3>
                         <ul className="space-y-2">
                             <li>
@@ -56,7 +56,7 @@ const Footer = () => {
                     </div>
 
                     {/* Additional Resources */}
-                    <div>
+                    <div className="font-jakarta">
                         <h3 className="font-bold text-lg mb-4">Additional Resources</h3>
                         <div className="flex space-x-8 mb-4">
                             <Link>
@@ -80,7 +80,7 @@ const Footer = () => {
                         </p>
                     </div>
                 </div>
-                <div className="mt-8 pt-8 border-t border-gray-600 text-center text-gray-400">
+                <div className="font-jakarta mt-8 pt-8 border-t border-gray-600 text-center text-gray-400">
                 <p>&copy; {new Date().getFullYear()} Eggs'n'More. All rights reserved.</p>
                 </div>
             </div>

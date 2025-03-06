@@ -15,7 +15,7 @@ const ProductShowCase = () => {
                 <div className="max-w-6xl mx-auto">
 
                     <motion.h2
-                        className="text-3xl font-bold text-center mb-12"
+                        className="text-3xl font-jakarta font-bold text-center mb-12"
                         initial={{ opacity: 0, y: 50 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.7 }}
@@ -24,7 +24,7 @@ const ProductShowCase = () => {
                     </motion.h2>
 
                     {/* Mobile Carousel (visible for small screens) */}
-                    <div className="md:hidden">
+                    <div className="md:hidden font-jakarta">
                         <Swiper
                             modules={[Navigation, Pagination]}
                             spaceBetween={20}
