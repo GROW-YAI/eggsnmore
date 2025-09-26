@@ -66,9 +66,15 @@ const LandingPage = () => {
                     >
                         <h2 className="text-3xl font-bold text-gray-900 mb-8">Contact Us</h2>
                         <div className="flex justify-center items-center mb-8">
-                            <PhoneCall className="w-6 h-6 text-yellow-500 mr-2" />
-                            <span className="text-lg text-gray-600">+233 24 843 432 / +233 50 530 3636</span>
-                        </div>
+  <PhoneCall className="w-6 h-6 text-yellow-500 mr-2" />
+  <a
+    href="tel:+23324843432"
+    className="text-lg text-gray-600 hover:text-yellow-600"
+  >
+    +233 24 843 432 / +233 50 530 3636
+  </a>
+</div>
+
                         <Link
                             to='mailto:eggsnmore.gh@gmail.com'
                             className="text-yellow-500 text-lg hover:text-yellow-600 transition-colors duration-200"
