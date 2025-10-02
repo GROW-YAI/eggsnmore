@@ -5,25 +5,38 @@ import { AnimatePresence, motion } from "framer-motion";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const menuItems = ["Home", "About", "Company", "Services", "Contact"];
+  
+  const menuItems = [
+    { label: "Home", target: "#home" },
+    { label: "About", target: "#about" },
+    { label: "Company", target: "#company" },
+      { label: "Services", target: "#services" }, 
+    { label: "Contact", target: "#contact" },
+  ];
 
-  // helper function for smooth scroll
-  const handleScroll = (e, targetId) => {
-    e.preventDefault();
-    const section = document.querySelector(targetId);
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
+  // delay before closing mobile menu so native anchor scroll completes without layout jumps
+  const CLOSE_DELAY_MS = 180;
+
+  const handleNavClick = (e, target) => {
+  
+    if (document.querySelector(target)) {
+      setTimeout(() => setIsOpen(false), CLOSE_DELAY_MS);
+    } else {
+      setIsOpen(false);
     }
-    setIsOpen(false); // close menu after clicking
   };
 
   return (
-    <nav className="fixed top-0 left-0 w-full bg-white shadow-md z-50 overflow-x-hidden">
+    <nav className="fixed top-0 left-0 w-full bg-white shadow-md z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          {/* Logo */}
+        
           <div className="font-jakarta flex items-center">
-            <a href="#" className="inline-flex space-x-2 items-center">
+            <a
+              href="#home"
+              onClick={(e) => handleNavClick(e, "#home")}
+              className="inline-flex space-x-2 items-center"
+            >
               <img
                 src="./images/eggsnmore.jpg"
                 alt="logo"
@@ -33,50 +46,51 @@ const Navbar = () => {
             </a>
           </div>
 
-          {/* Desktop Nav */}
+         
           <div className="hidden md:flex space-x-8 font-jakarta">
             {menuItems.map((item, index) => (
               <a
                 key={index}
-                href={`#${item.toLowerCase()}`}
-                onClick={(e) => handleScroll(e, `#${item.toLowerCase()}`)}
+                href={item.target}
+                onClick={(e) => handleNavClick(e, item.target)}
                 className="text-gray-700 hover:text-yellow-500 transition-colors duration-200 font-medium"
               >
-                {item}
+                {item.label}
               </a>
             ))}
           </div>
 
-          {/* Mobile Nav Toggle */}
+         
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="text-gray-700 hover:text-yellow-500 focus:outline-none"
             >
-              {isOpen ? <X /> : <Menu />}
+              {isOpen ? <X size={28} /> : <Menu size={28} />}
             </button>
           </div>
         </div>
       </div>
 
-      {/* Mobile Menu */}
+    
       <AnimatePresence>
         {isOpen && (
           <motion.div
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-white"
+            style={{ overflow: "hidden" }}
+            className="md:hidden bg-white shadow-md"
           >
-            <div className="px-2 pt-2 pb-3 space-y-1 font-jakarta">
+            <div className="px-4 pt-4 pb-6 space-y-2 font-jakarta">
               {menuItems.map((item, index) => (
                 <a
                   key={index}
-                  href={`#${item.toLowerCase()}`}
-                  onClick={(e) => handleScroll(e, `#${item.toLowerCase()}`)}
+                  href={item.target}
+                  onClick={(e) => handleNavClick(e, item.target)}
                   className="block px-3 py-2 text-gray-700 hover:text-yellow-500 hover:bg-gray-50 rounded-md transition-colors duration-200"
                 >
-                  {item}
+                  {item.label}
                 </a>
               ))}
             </div>
