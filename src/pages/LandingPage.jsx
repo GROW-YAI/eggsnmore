@@ -65,12 +65,12 @@ const LandingPage = () => {
         </div>
       </section>
 
-      {/* Products Section */}
+      
       <section id="services">
         <ProductShowCase />
       </section>
 
-      {/* Contact Section */}
+     
       <section id="contact" className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 font-jakarta">
           <motion.div
@@ -91,7 +91,7 @@ const LandingPage = () => {
                 href="tel:+23324843432"
                 className="text-lg text-gray-600 hover:text-yellow-600"
               >
-                +233 24 843 432 / +233 50 530 3636
+                +233 24 843 428 / +233 50 530 3636
               </a>
             </div>
 

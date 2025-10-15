@@ -14,7 +14,7 @@ const Navbar = () => {
     { label: "Contact", target: "#contact" },
   ];
 
-  // delay before closing mobile menu so native anchor scroll completes without layout jumps
+  
   const CLOSE_DELAY_MS = 180;
 
   const handleNavClick = (e, target) => {
