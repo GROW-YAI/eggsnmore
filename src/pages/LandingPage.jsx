@@ -45,14 +45,16 @@ const LandingPage = () => {
             className="flex flex-col lg:flex-row items-center gap-12"
           >
             <div className="lg:w-1/2">
-              <h2 className="text-3xl font-bold text-gray-900 ml-0 sm:ml-8 mb-4">
-                About the innovator
-              </h2>
-              <p className="text-lg text-gray-600 ml-0 sm:ml-8 mb-6">
-                Founded by a passionate farmer, Eggs n More bridges the gap
-                between local producers and consumers, ensuring fresh, high
-                quality products reach your table.
-              </p>
+             <h2 className="text-3xl font-bold text-gray-900 ml-0 sm:ml-8 mb-4">
+  About the Innovator
+</h2>
+<p className="text-lg text-gray-600 ml-0 sm:ml-8 mb-6">
+  At the heart of Eggs n More is a visionary who saw endless possibilities in the humble egg.
+  From supplying fresh eggs to creating nutrient-rich egg and eggshell powders, her work reflects
+  innovation, sustainability, and purpose. Each product is crafted to promote health, reduce waste,
+  and empower local communities — turning everyday eggs into extraordinary value.
+</p>
+
             </div>
             <div className="lg:w-1/2">
               <img
