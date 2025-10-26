@@ -3,7 +3,7 @@ import Footer from "../components/Footer";
 import Hero from "../components/Hero";
 import Navbar from "../components/Navbar";
 import ProductShowCase from "../Products/ProductShowCase";
-import { PhoneCall } from "lucide-react";
+import { Egg, Wheat,PhoneCall } from "lucide-react";
 
 const LandingPage = () => {
   return (
@@ -12,27 +12,34 @@ const LandingPage = () => {
       <section id="home">
       <Hero /></section>
 
-      {/* About Section */}
-      <section id="about" className="py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 font-jakarta">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
-              About Our Products
-            </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              We deliver the freshest eggs and egg-based nutritional powder
-              straight to your doorstep. Our commitment to quality ensures you
-              get the best products every time.
-            </p>
-          </motion.div>
-        </div>
-      </section>
+{/* About Section */}
+<section id="about" className="py-20 bg-gray-50">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 font-jakarta">
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8 }}
+      viewport={{ once: true }}
+      className="text-center mb-16"
+    >
+      <div className="flex justify-center gap-4 mb-4">
+        <Egg className="w-10 h-10 text-yellow-600" />
+        <Wheat className="w-10 h-10 text-green-600" />
+      </div>
+
+      <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
+        About Our Products
+      </h2>
+
+      <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+        We deliver the freshest eggs and egg-based nutritional powder straight to 
+        your doorstep. Our commitment to quality ensures you get the best products 
+        every time.
+      </p>
+    </motion.div>
+  </div>
+</section>
+
 
       {/* Company Section */}
       <section id="company" className="py-20">
