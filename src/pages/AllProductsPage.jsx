@@ -95,22 +95,27 @@ const products = [
     image: "/images/egg shell powder.jpg",
     link: "https://paystack.com/buy/1kg-egg-shell-powder-lugsyf",
   },
-  {
-    id: 13,
-    name: "Fresh Farm Eggs",
-    description:
-      "Freshly collected farm eggs, perfect for your daily meals and baking.",
-    image: "/images/eggs crate.jpg",
-    link: "https://paystack.com/buy/fresh-fresh-eggs-enfqki",
-  },
-  {
-    id: 14,
-    name: "Fresh Farm Eggs - Big Size",
-    description:
-      "Big-size farm eggs, rich in nutrients and ideal for families.",
-    image: "/images/eggs crate.jpg",
-    link: "https://paystack.com/buy/fresh-farm-eggs--big-pnuerh",
-  },
+ {
+  id: 13,
+  name: "Fresh Farm Eggs (Normal Size)",
+  description:
+    "Freshly collected farm eggs, neatly packed in crates. Perfect for your daily meals and baking needs.",
+  image: "/images/hen-eggs-big.jpg",
+  link: "https://paystack.com/buy/fresh-fresh-eggs-enfqki",
+  packaging: "Crate",
+  size: "Normal",
+},
+{
+  id: 14,
+  name: "Fresh Farm Eggs (Big Size)",
+  description:
+    "Big-size farm eggs, sold in crates. Rich in nutrients and perfect for families or bulk users.",
+  image: "/images/hen-eggs-big.jpg",
+  link: "https://paystack.com/buy/fresh-farm-eggs--big-pnuerh",
+  packaging: "Crate",
+  size: "Big",
+},
+
 ];
 
 const AllProducts = () => {

@@ -61,7 +61,7 @@ const Hero = () => {
             >
               <SwiperSlide>
                 <motion.img
-                  src="/images/eggPowder1.jpg"
+                  src="/images/egg yolk powder.jpg"
                   alt="Egg Powder Promo 1"
                   className="w-full h-[450px] object-cover rounded-2xl shadow-md transition-all duration-500"
                   initial={{ opacity: 0 }}
@@ -72,7 +72,7 @@ const Hero = () => {
 
               <SwiperSlide>
                 <motion.img
-                  src="/images/eggPowder2.jpg"
+                  src="/images/egg shell powder.jpg"
                   alt="Egg Powder Promo 2"
                   className="w-full h-[450px] object-cover rounded-2xl shadow-md transition-all duration-500"
                   initial={{ opacity: 0 }}
@@ -105,7 +105,7 @@ const Hero = () => {
 
               <SwiperSlide>
                 <motion.img
-                  src="/images/fresh eggs 1.jpg"
+                  src="/images/egg-hero.jpg"
                   alt="Fresh Eggs"
                   className="w-full h-[450px] object-cover rounded-2xl shadow-md transition-all duration-500"
                   initial={{ opacity: 0 }}
